@@ -23,6 +23,9 @@
 		7D05940018FCC8A1006CCB4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D0593FE18FCC8A1006CCB4A /* InfoPlist.strings */; };
 		7D05940218FCC8A1006CCB4A /* ColorboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D05940118FCC8A1006CCB4A /* ColorboardTests.m */; };
 		7D05940C18FCC8CC006CCB4A /* Colorboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D05940B18FCC8CC006CCB4A /* Colorboard.storyboard */; };
+		C8B505B218FCD72700FAEBA8 /* BNRColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B505B118FCD72700FAEBA8 /* BNRColorViewController.m */; };
+		C8B505B518FCDB0600FAEBA8 /* BNRPalleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B505B418FCDB0600FAEBA8 /* BNRPalleteViewController.m */; };
+		C8B505B818FCDC7400FAEBA8 /* BNRColorDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B505B718FCDC7400FAEBA8 /* BNRColorDescription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		7D0593FF18FCC8A1006CCB4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7D05940118FCC8A1006CCB4A /* ColorboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorboardTests.m; sourceTree = "<group>"; };
 		7D05940B18FCC8CC006CCB4A /* Colorboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Colorboard.storyboard; sourceTree = SOURCE_ROOT; };
+		C8B505B018FCD72700FAEBA8 /* BNRColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRColorViewController.h; sourceTree = "<group>"; };
+		C8B505B118FCD72700FAEBA8 /* BNRColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRColorViewController.m; sourceTree = "<group>"; };
+		C8B505B318FCDB0600FAEBA8 /* BNRPalleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRPalleteViewController.h; sourceTree = "<group>"; };
+		C8B505B418FCDB0600FAEBA8 /* BNRPalleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPalleteViewController.m; sourceTree = "<group>"; };
+		C8B505B618FCDC7400FAEBA8 /* BNRColorDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRColorDescription.h; sourceTree = "<group>"; };
+		C8B505B718FCDC7400FAEBA8 /* BNRColorDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRColorDescription.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +126,15 @@
 		7D0593DE18FCC8A1006CCB4A /* Colorboard */ = {
 			isa = PBXGroup;
 			children = (
-				7D05940B18FCC8CC006CCB4A /* Colorboard.storyboard */,
+				C8B505B318FCDB0600FAEBA8 /* BNRPalleteViewController.h */,
+				C8B505B418FCDB0600FAEBA8 /* BNRPalleteViewController.m */,
+				C8B505B018FCD72700FAEBA8 /* BNRColorViewController.h */,
+				C8B505B118FCD72700FAEBA8 /* BNRColorViewController.m */,
+				C8B505B618FCDC7400FAEBA8 /* BNRColorDescription.h */,
+				C8B505B718FCDC7400FAEBA8 /* BNRColorDescription.m */,
 				7D0593E718FCC8A1006CCB4A /* BNRAppDelegate.h */,
 				7D0593E818FCC8A1006CCB4A /* BNRAppDelegate.m */,
+				7D05940B18FCC8CC006CCB4A /* Colorboard.storyboard */,
 				7D0593ED18FCC8A1006CCB4A /* Images.xcassets */,
 				7D0593EA18FCC8A1006CCB4A /* Colorboard.xcdatamodeld */,
 				7D0593DF18FCC8A1006CCB4A /* Supporting Files */,
@@ -253,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B505B518FCDB0600FAEBA8 /* BNRPalleteViewController.m in Sources */,
+				C8B505B818FCDC7400FAEBA8 /* BNRColorDescription.m in Sources */,
 				7D0593EC18FCC8A1006CCB4A /* Colorboard.xcdatamodeld in Sources */,
 				7D0593E518FCC8A1006CCB4A /* main.m in Sources */,
 				7D0593E918FCC8A1006CCB4A /* BNRAppDelegate.m in Sources */,
+				C8B505B218FCD72700FAEBA8 /* BNRColorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +470,7 @@
 				7D05940718FCC8A1006CCB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D05940818FCC8A1006CCB4A /* Build configuration list for PBXNativeTarget "ColorboardTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +479,7 @@
 				7D05940A18FCC8A1006CCB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
